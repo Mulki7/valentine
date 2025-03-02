@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .valentine-container {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .valentine-container h1 {
+            margin-bottom: 1.5rem;
+            color: #ff758c;
+            font-weight: 600;
+        }
+        .valentine-container p {
+            color: #333;
+            font-size: 1.2rem;
+        }
+        .valentine-container button {
+            width: 100%;
+            padding: 0.75rem;
+            background: #ff758c;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .valentine-container button:hover {
+            background: #ff7eb3;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="valentine-container">
+        <h1>Happy Valentine's Day!</h1>
+        <p>Dear Tiara,</p>
+        <p>You mean the world to me. Thank you for being in my life.</p>
+        <button onclick="alert('I love you!')">Click Me</button>
+    </div>
+</body>
+</html>
